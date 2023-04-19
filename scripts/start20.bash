@@ -68,7 +68,7 @@ docker run -it \
   -v "$XAUTH:$XAUTH" \
   -v "/tmp/.X11-unix:/tmp/.X11-unix" \
   -v "/etc/localtime:/etc/localtime:ro" \
-  -v "/dev/input:/dev/input" \
+  -v "/dev:/dev" \
   -v $(pwd)/../docker_mount:/home/developer/docker_mount \
   --network host \
   --privileged \
